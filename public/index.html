@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Retriever</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Image Retriever</h1>
+      </header>
+
+      <section class="uploader">
+        <form id="upload-form">
+          <input id="pdf-file" type="file" accept="application/pdf" required>
+          <button type="submit">Upload PDF</button>
+        </form>
+        <div id="doc-status" class="status"></div>
+      </section>
+
+      <section class="chat">
+        <div id="messages" class="messages"></div>
+        <form id="chat-form" class="chat-form">
+          <input id="user-input" type="text" placeholder="Ask a question about the PDF..." autocomplete="off">
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+  </html>
+
+
